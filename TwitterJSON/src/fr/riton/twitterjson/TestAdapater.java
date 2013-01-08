@@ -81,6 +81,7 @@ public class TestAdapater extends ArrayAdapter<Event> {
 		
 		Event the_event = data.get(position);
 		holder.txt.setText(the_event.id);
+		holder.txt.setBackgroundResource(the_event.getResourceColorId());
 		
 		return row;
 	}

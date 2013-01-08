@@ -150,6 +150,8 @@ public class MainActivity extends Activity {
 		
 		JSONArray r = response.getJSONArray("array"); 
 		
+		int unique = 0;
+		
 		for (int i = 0; i < r.length(); i++) {
 			
 			JSONObject o = r.getJSONObject(i);
@@ -160,7 +162,9 @@ public class MainActivity extends Activity {
 			while (k_iter.hasNext()) {
 				String key = k_iter.next();
 				String value = o.getString(key);
-				results.add(new Event(key, value));				
+				int priority = unique++ % Event.EVENT_PRIORITY_CRITICAL + 1;
+				results.add(new Event(key, value, priority));
+				
 			}
 			
 			
