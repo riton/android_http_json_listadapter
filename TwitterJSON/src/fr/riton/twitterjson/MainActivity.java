@@ -39,8 +39,7 @@ public class MainActivity extends Activity {
 	public final static String USER_AGENT = "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11";
 	
 	private ListView display_list;
-	
-	// test GIT
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
