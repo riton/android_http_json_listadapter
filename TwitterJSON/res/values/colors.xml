@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="critical">#000000</color>
+    <color name="error">#FF0000</color>
+    <color name="text">#32CD32</color>
+    <color name="warning">#FF4500</color>
+    <color name="info">#ADD8E6</color>
+    
+</resources>
